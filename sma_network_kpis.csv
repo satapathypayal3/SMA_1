@@ -1,0 +1,13 @@
+Metric,Value
+Total Users,81306
+Total Connections,1768135
+Network Density,0.000267
+Communities Found,73
+Connected Components,1
+Avg Clustering Coefficient,0.565
+Transitivity,0.171
+Avg In-Degree,21.75
+Avg Out-Degree,21.75
+Raw Rows Loaded,2420766
+Duplicate Rows Removed,652617
+Self Loops Removed,22
