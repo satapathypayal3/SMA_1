@@ -13,7 +13,7 @@ An end-to-end analysis of a Twitter social network with 81,306 users and 1.77 mi
 
 ## What it does
 
-The full workflow is in one notebook, `sm_network_analysis.ipynb`:
+The full workflow is in one notebook, `notebooks/sm_network_analysis.ipynb`:
 
 1. **Data loading and checks**: reads the raw edge list and checks size, data types, missing values, duplicates, and self-loops
 2. **Cleaning**: removes duplicate connections and self-loops, then saves the cleaned edge list
@@ -239,13 +239,15 @@ In these three images, only the connections among the ten users are drawn; their
 
 ```
 .
-├── sm_network_analysis.ipynb     # the full analysis
+├── notebooks/
+│   └── sm_network_analysis.ipynb # the full analysis
 ├── test_env.py                   # checks that the libraries are installed
 ├── data/
-│   ├── raw/                      # twitter_combined.txt (downloaded from SNAP)
+│   ├── raw/                      # twitter_combined.txt (from SNAP)
 │   └── processed/                # cleaned edge list, centrality_results.csv
 ├── outputs/                      # Gephi images and top-user tables
-├── gephi/                        # .gexf network file and Gephi project
+├── gephi/                        # .gexf network files and Gephi projects
+├── report/                       # project report
 └── README.md
 ```
 
@@ -270,12 +272,12 @@ In these three images, only the connections among the ten users are drawn; their
    python test_env.py
    ```
 
-4. Download `twitter_combined.txt.gz` from the SNAP page linked above, unzip it, and put `twitter_combined.txt` in `data/raw/`
+4. The dataset is included at `data/raw/twitter_combined.txt`. It can also be downloaded from the SNAP page linked above.
 
 5. Open the notebook and update the file paths at the top of the relevant cells to match your machine
 
    ```bash
-   jupyter notebook sm_network_analysis.ipynb
+   jupyter notebook notebooks/sm_network_analysis.ipynb
    ```
 
 6. To explore the network interactively, install [Gephi](https://gephi.org/) and open `gephi/twitter_top1000_communities.gexf`
@@ -294,5 +296,3 @@ PageRank and the approximate betweenness calculation take a few minutes each on 
 ## Author
 
 Payal Satapathy
-#   S M A _ 1  
- 
