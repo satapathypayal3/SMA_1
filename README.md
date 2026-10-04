@@ -158,6 +158,10 @@ These images use the network of the top 1,000 users by PageRank. Colour shows th
 
 The full top-1,000 network, laid out with ForceAtlas 2. Node size shows PageRank, so the largest circles are the most influential users. The communities separate into clearly distinct regions.
 
+![Community colours and sizes](outputs/gephi_community_sizes.png)
+
+The colour key for the image above, listing each community with its share of the 1,000 users. A share of 26.9% is 269 users.
+
 **Bridging**
 
 ![Network sized by betweenness centrality](outputs/gephi_betweenness.png)
@@ -181,6 +185,36 @@ The highest-ranked users by PageRank and the connections between them, labelled 
 ![One of the largest communities](outputs/gephi_largest_community.png)
 
 One of the largest communities in the top-1,000 network. The nodes are similar in size, so this community is densely connected without a single dominant user; the network's most influential accounts sit in other communities.
+
+**Degree**
+
+![Network sized by degree](outputs/gephi_degree.png)
+
+The same network with node size showing degree, the number of connections each user has within the top-1,000 network.
+
+![Degree distribution from Gephi](outputs/gephi_degree_distribution.png)
+
+The degree distribution of the top-1,000 network, from Gephi's Average Degree report. It covers these 1,000 users only, so it differs from the notebook's chart for all 81,306 users.
+
+**Top 10 users by PageRank**
+
+![Top 10 users by PageRank](outputs/gephi_top_pagerank_users.png)
+
+The ten users in `outputs/top_pagerank_users.csv` and the connections among them. Node size shows PageRank.
+
+**Top 10 users by in-degree**
+
+![Top 10 users by in-degree](outputs/gephi_top_degree_users.png)
+
+The ten users in `outputs/top_degree_users.csv` and the connections among them.
+
+**Top 10 users by betweenness**
+
+![Top 10 users by betweenness](outputs/gephi_top_betweenness_users.png)
+
+The ten users in `outputs/top_betweenness_users.csv` and the connections among them. Node size shows betweenness.
+
+In these three images, only the connections among the ten users are drawn; their connections to the rest of the network are left out.
 
 ## Key findings
 
@@ -260,3 +294,5 @@ PageRank and the approximate betweenness calculation take a few minutes each on 
 ## Author
 
 Payal Satapathy
+#   S M A _ 1  
+ 
